@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://github.com/Rameshgalaxy',
+  url: 'https://Rameshgalaxy.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/dsyou/',
@@ -148,7 +148,8 @@ const config: Config = {
 };
 
 export default {
-  url: 'https://<ORG>.github.io',
-  baseUrl: '/<REPO>/',
-  // ...rest
+  title: 'My Site',             // REQUIRED [2](https://docusaurus.io/docs/api/docusaurus-config)
+  url: 'https://Rameshgalaxy.github.io',    // REQUIRED; must be a valid URL [2](https://docusaurus.io/docs/api/docusaurus-config)
+  baseUrl: '/dsyou/',               // base path after url [2](https://docusaurus.io/docs/api/docusaurus-config)
 };
+
