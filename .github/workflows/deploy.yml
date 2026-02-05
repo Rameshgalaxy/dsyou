@@ -29,10 +29,10 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
 
       - name: Build static site
-        run: npm run build
+        run: yarn build
         # Docusaurus outputs static files into /build by default [2](https://github.com/facebook/docusaurus)
 
       - name: Upload Pages artifact
