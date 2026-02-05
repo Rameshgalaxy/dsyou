@@ -16,7 +16,7 @@ const config: Config = {
 
   // REQUIRED fields according to Docusaurus config docs
   url: 'https://Rameshgalaxy.github.io',      // Top-level domain [2](https://github.com/facebook/docusaurus)
-  baseUrl: '/',                         // Subpath for GitHub pages [2](https://github.com/facebook/docusaurus)
+  baseUrl: '/dsyou',                         // Subpath for GitHub pages [2](https://github.com/facebook/docusaurus)
 
   organizationName: 'Rameshgalaxy',
   projectName: 'dsyou',
