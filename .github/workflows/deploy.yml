@@ -22,9 +22,7 @@ jobs:
         cache: npm
 
     - name: Install dependencies
-      working-directory: dsyou
       run: npm ci
 
     - name: Build website
-      working-directory: dsyou
       run: npm run build
