@@ -1,0 +1,95 @@
+
+---
+id: monitoring-alarm-configuration
+title: Alarm Configuration
+description: Create, edit, and manage alarms using rules, thresholds, schedules, and notifications.
+slug: /monitoring/trend/trend-overview
+sidebar_position: 2
+tags:
+  - alarms
+  - monitoring
+  - notifications
+  - thresholds
+  - escalation
+keywords:
+  - alarm configuration
+  - create alarm
+  - threshold alert
+  - notification channel
+  - escalation policy
+  - alarm not firing
+  - alert fatigue
+context:
+  owner: monitoring-docs@company.com
+  last_reviewed: 2026-01-29
+  lifecycle: active
+  product_area: monitoring
+  audience:
+    - end_user
+    - admin
+    - developer
+  feature_ids:
+    - feature.alarms.configuration
+    - feature.alarms.ruleBuilder
+    - feature.alarms.notifications
+    - feature.alarms.schedules
+    - feature.alarms.escalation
+  ui_locations:
+    - monitoring/alarms
+    - monitoring/alarms/new
+    - monitoring/alarms/edit
+    - monitoring/alarms/rule-builder
+    - settings/notifications/channels
+    - settings/alarms/escalation
+  error_codes:
+    - ALARM_RULE_INVALID
+    - ALARM_TARGET_NOT_FOUND
+    - ALARM_NOTIFICATION_CHANNEL_MISSING
+    - ALARM_PERMISSION_DENIED
+    - ALARM_EVALUATION_DELAYED
+  keywords:
+    - alarm rule
+    - condition builder
+    - metric threshold
+    - schedule mute
+    - notification routing
+    - on-call escalation
+    - alarm suppressed
+    - alert not triggering
+  intents:
+    - how_to
+    - fix_error
+    - reference
+---
+
+import Admonition from '@theme/Admonition';
+
+# Alarm Configuration {#top}
+
+Use this guide to **create and manage alarms** that trigger when conditions are met (for example, a metric threshold breach), then **notify the right people** through the right channels—without causing alert fatigue.
+
+If you opened this page from in‑product help, jump to:
+
+- **Create an alarm** → Procedure
+- **Alarm not firing** → Troubleshooting
+- **Notification issues** → Notification channels
+
+## At a glance {#at-a-glance}
+
+- **Primary task:** Define an alarm rule, set sensitivity, and configure notifications.
+- **Typical users:** Operators, SRE/DevOps, admins.
+- **Common entry points:** Alarms list, New Alarm wizard, Rule builder, Notification settings.
+- **Common problems covered:** Invalid rule, missing notification channels, alarm suppressed, delayed evaluation.
+
+## Prerequisites {#prerequisites}
+
+Before configuring alarms, ensure:
+
+1. You have access to the **Monitoring** module and **Alarms** page.
+2. The target resource (service/host/device/app) exists and is sending data.
+3. At least one **notification channel** is configured (email, Teams, webhook, etc.).
+4. Your role includes **Manage Alarms** permission (or equivalent).
+
+<Admonition type="tip" title="Tip — Avoid alert fatigue">
+  Start with fewer alarms and tune thresholds and duration over a week. Use severity levels and routing to reduce noise.
+</Admonition>
