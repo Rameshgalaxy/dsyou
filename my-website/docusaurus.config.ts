@@ -14,12 +14,7 @@ const config: Config = {
     v4: true,
   },
 
-<<<<<<< HEAD
-=======
-  // For a project site at https://<user>.github.io/<repo>/ :
-  // url should be https://<user>.github.io
-  // baseUrl should be /<repo>/ (with trailing slash)
->>>>>>> 47f0aa52c4b2e6a9abd90334d5a49fbf5d481bb2
+  // GitHub Pages deployment settings
   url: 'https://Rameshgalaxy.github.io',
   baseUrl: '/dsyou/',
 
@@ -40,10 +35,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-<<<<<<< HEAD
-=======
-          // TODO: update to your repo if you want "Edit this page" links
->>>>>>> 47f0aa52c4b2e6a9abd90334d5a49fbf5d481bb2
           editUrl: 'https://github.com/Rameshgalaxy/dsyou/tree/main/',
         },
         blog: {
@@ -52,10 +43,6 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-<<<<<<< HEAD
-=======
-          // TODO: update to your repo if you want "Edit this page" links
->>>>>>> 47f0aa52c4b2e6a9abd90334d5a49fbf5d481bb2
           editUrl: 'https://github.com/Rameshgalaxy/dsyou/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -80,67 +67,33 @@ const config: Config = {
         src: 'img/abb_logo.svg',
       },
       items: [
-      
-{ type: 'docSidebar', sidebarId: 'alarmSidebar', label: 'Alarm', position: 'left' },
-    { type: 'docSidebar', sidebarId: 'eventSidebar', label: 'Event', position: 'left' },
-    { type: 'docSidebar', sidebarId: 'trendSidebar', label: 'Trend', position: 'left' },
+        {type: 'docSidebar', sidebarId: 'alarmSidebar', label: 'Alarm', position: 'left'},
+        {type: 'docSidebar', sidebarId: 'eventSidebar', label: 'Event', position: 'left'},
+        {type: 'docSidebar', sidebarId: 'trendSidebar', label: 'Trend', position: 'left'},
 
-        {
-<<<<<<< HEAD
-=======
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
->>>>>>> 47f0aa52c4b2e6a9abd90334d5a49fbf5d481bb2
-          href: 'https://github.com/Rameshgalaxy/dsyou',
-          label: 'GitHub',
-          position: 'right',
-        },
+        {to: '/ui-docs-link-test', label: 'UI→Docs Test', position: 'right'},
+        {href: 'https://github.com/Rameshgalaxy/dsyou', label: 'GitHub', position: 'right'},
       ],
     },
-<<<<<<< HEAD
-      prism: {
-=======
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [{label: 'Tutorial', to: '/docs/intro'}],
-        },
-        {
-          title: 'Community',
+          title: 'Monitoring',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+            {label: 'Alarm', to: '/docs/monitoring/alarm/overview'},
+            {label: 'Event', to: '/docs/monitoring/event/overview'},
+            {label: 'Trend', to: '/docs/monitoring/trend/overview'},
           ],
         },
         {
           title: 'More',
-          items: [
-            {label: 'Blog', to: '/blog'},
-            {label: 'GitHub', href: 'https://github.com/Rameshgalaxy/dsyou'},
-          ],
+          items: [{label: 'GitHub', href: 'https://github.com/Rameshgalaxy/dsyou'}],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Built with Docusaurus.`,
     },
     prism: {
->>>>>>> 47f0aa52c4b2e6a9abd90334d5a49fbf5d481bb2
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
