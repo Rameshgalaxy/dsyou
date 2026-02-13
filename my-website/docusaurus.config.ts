@@ -16,7 +16,7 @@ const config: Config = {
 
   // GitHub Pages deployment settings
   url: 'https://Rameshgalaxy.github.io',
-  baseUrl: '/dsyou/',
+  baseUrl: '/',
 
   organizationName: 'Rameshgalaxy',
   projectName: 'dsyou',
